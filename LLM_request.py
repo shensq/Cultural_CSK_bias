@@ -2,6 +2,7 @@ import argparse
 import logging
 import transformers
 import datasets
+import sys
 from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoModelForSeq2SeqLM, AutoTokenizer
 
