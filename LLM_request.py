@@ -50,15 +50,19 @@ def main():
         model = AutoModel.from_pretrained(checkpoint, torch_dtype="auto", device_map="auto")
 
     results = []
+    json_write = open("results/country_prediction/{}_{}.json".format(args.checkpoint.split("/")[1], args.file[:-4]),
+                      'w')
+
     for i, sample in tqdm(enumerate(data[:])):
         inputs = tokenizer.encode(sample, return_tensors="pt").to("cuda")
         outputs = model.generate(inputs, max_new_tokens=args.max_new_tokens)
-        results.append({"input":sample, "output":tokenizer.decode(outputs[0])})
+        results.append({"index":i, "input":sample, "output":tokenizer.decode(outputs[0])})
+        json_write.writelines([json.dumps(r)+'\n' for r in results])
+        if i % 100 == 0:
+            json_write.flush()
 
+    json_write.close()
     logging.warning("Generation completed.")
-    with open("results/country_prediction/{}_{}.json".format(args.checkpoint.split("/")[1], args.file[:-4]), 'w') as f:
-        results = [json.dumps(r)+'\n' for r in results]
-        f.writelines(results)
     logging.warning("Output saved.")
 
 if __name__ == "__main__":
