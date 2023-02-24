@@ -4,7 +4,6 @@ import transformers
 import datasets
 import sys
 import json
-import pickle
 
 from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoModelForSeq2SeqLM, AutoTokenizer, AutoModel
