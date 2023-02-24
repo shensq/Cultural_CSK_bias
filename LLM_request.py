@@ -29,10 +29,11 @@ def main():
     results = [None] * len(data)
     for i, sample in tqdm(enumerate(data[:])):
         inputs = tokenizer.encode(sample, return_tensors="pt").to("cuda")
-        outputs = model.generate(inputs, max_new_tokens=30)
+        outputs = model.generate(inputs, max_new_tokens=args.max_new_tokens)
         results[i] = tokenizer.decode(outputs[0])
-        with open("gpt3/country_prediction/{}_{}.txt".format(args.checkpoint.split("/")[1], args.file[:-4]), 'w') as f:
-            pickle.dump(results, f)
+    with open("results/country_prediction/{}_{}.txt".format(args.checkpoint.split("/")[1], args.file[:-4]), 'w') as f:
+        results = [r+'\n' for r in results]
+        f.writelines(results)
 
 
 if __name__ == "__main__":
