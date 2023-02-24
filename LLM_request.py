@@ -7,7 +7,7 @@ import json
 import pickle
 
 from tqdm import tqdm
-from transformers import AutoModelForCausalLM, AutoModelForSeq2SeqLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoModelForSeq2SeqLM, AutoTokenizer, AutoModel
 
 
 def main():
@@ -43,8 +43,13 @@ def main():
     logging.warning("Loading model {}".format(args.checkpoint))
     checkpoint = args.checkpoint
     tokenizer = AutoTokenizer.from_pretrained(checkpoint)
-    model = AutoModelForCausalLM.from_pretrained(checkpoint, torch_dtype="auto", device_map="auto")
-
+    if "opt" in checkpoint:
+        model = AutoModelForCausalLM.from_pretrained(checkpoint, torch_dtype="auto", device_map="auto")
+    elif "flan" in checkpoint:
+        model = AutoModelForSeq2SeqLM.from_pretrained(checkpoint, torch_dtype="auto", device_map="auto")
+    else:
+        model = AutoModel.from_pretrained(checkpoint, torch_dtype="auto", device_map="auto")
+        
     results = []
     for i, sample in tqdm(enumerate(data[:])):
         inputs = tokenizer.encode(sample, return_tensors="pt").to("cuda")
