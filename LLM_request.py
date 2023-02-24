@@ -19,9 +19,6 @@ def main():
     with open(folder + args.file, 'r') as f:
         data = f.readlines()
     data = [d.replace('\n', '') for d in data]
-    data = [d+""]
-
-
     logging.info("Dataset loaded")
 
     logging.info("Loading model {}".format(args.checkpoint))

@@ -58,9 +58,17 @@ def get_samples(dataset, main_templates, additional_prompt, num_samples=-1):
             data = [d.replace("PersonY", "others") for d in data]  # a quick fix to PersonY
 
     samples = build_prompt(main_templates, additional_prompt, data, )
-
     with open("country_prediction/{}_samples.txt".format(dataset), 'w') as f:
         f.writelines("\n".join(samples))
+
+    samples = [s[:-len(additional_prompt)-2]+"?" for s in samples]
+    with open("country_prediction/{}_samples_free.txt".format(dataset), 'w') as f:
+        f.writelines("\n".join(samples))
+
+    samples = [s+" Explain why." for s in samples]
+    with open("country_prediction/{}_samples_explain.txt".format(dataset), 'w') as f:
+        f.writelines("\n".join(samples))
+
     return samples
 
 
@@ -81,10 +89,11 @@ def main():
 
     additional_prompt = "the United States, China, India, or Germany?"
     logging.info("Processing atomic!")
-    samples = get_samples("atomic", atomic_templates, additional_prompt, num_samples=1500)
+    samples = get_samples("atomic", atomic_templates, additional_prompt, num_samples=1000)
 
     logging.info("Processing GenericsKB!")
-    samples = get_samples("genericskb", genericskb_templates, additional_prompt, num_samples=1500)
+    samples = get_samples("genericskb", genericskb_templates, additional_prompt, num_samples=1000)
+
 
 
 if __name__ == "__main__":
