@@ -3,6 +3,9 @@ import logging
 import transformers
 import datasets
 import sys
+import json
+import pickle
+
 from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoModelForSeq2SeqLM, AutoTokenizer
 
@@ -42,13 +45,15 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(checkpoint)
     model = AutoModelForCausalLM.from_pretrained(checkpoint, torch_dtype="auto", device_map="auto")
 
-    results = [None] * len(data)
+    results = []
     for i, sample in tqdm(enumerate(data[:])):
         inputs = tokenizer.encode(sample, return_tensors="pt").to("cuda")
         outputs = model.generate(inputs, max_new_tokens=args.max_new_tokens)
-        results[i] = tokenizer.decode(outputs[0])
-    with open("results/country_prediction/{}_{}.txt".format(args.checkpoint.split("/")[1], args.file[:-4]), 'w') as f:
-        results = [r+'\n' for r in results]
+        results.append({"input":sample, "output":tokenizer.decode(outputs[0])})
+
+
+    with open("results/country_prediction/{}_{}.json".format(args.checkpoint.split("/")[1], args.file[:-4]), 'w') as f:
+        results = [json.dumps(r)+'\n' for r in results]
         f.writelines(results)
 
 
