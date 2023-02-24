@@ -21,7 +21,7 @@ def main():
         datefmt="%m/%d/%Y %H:%M:%S",
         handlers=[logging.StreamHandler(sys.stdout)],
     )
-    log_level = logging.INFO
+    log_level = logging.WARNING
     logger.setLevel(log_level)
     logging.info(args)
 
@@ -30,14 +30,14 @@ def main():
     transformers.utils.logging.enable_default_handler()
     transformers.utils.logging.enable_explicit_format()
 
-    logging.info("Loading Dataset.")
+    logging.warning("Loading Dataset.")
     folder = "data/country_prediction/"
     with open(folder + args.file, 'r') as f:
         data = f.readlines()
     data = [d.replace('\n', '') for d in data]
-    logging.info("Dataset loaded")
+    logging.warning("Dataset loaded")
 
-    logging.info("Loading model {}".format(args.checkpoint))
+    logging.warning("Loading model {}".format(args.checkpoint))
     checkpoint = args.checkpoint
     tokenizer = AutoTokenizer.from_pretrained(checkpoint)
     model = AutoModelForCausalLM.from_pretrained(checkpoint, torch_dtype="auto", device_map="auto")
