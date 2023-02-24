@@ -56,8 +56,10 @@ def main():
     for i, sample in tqdm(enumerate(data[:])):
         inputs = tokenizer.encode(sample, return_tensors="pt").to("cuda")
         outputs = model.generate(inputs, max_new_tokens=args.max_new_tokens)
-        results.append({"index":i, "input":sample, "output":tokenizer.decode(outputs[0])})
-        json_write.writelines([json.dumps(r)+'\n' for r in results])
+        result = {"index":i, "input":sample, "output":tokenizer.decode(outputs[0])}
+        results.append(result)
+        # json_write.writelines([json.dumps(r)+'\n' for r in results])
+        json_write.write(json.dumps(result)+'\n')
         if i % 100 == 0:
             json_write.flush()
 
