@@ -13,7 +13,7 @@ from transformers import AutoModelForCausalLM, AutoModelForSeq2SeqLM, AutoTokeni
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--file', type=str, default='atomic_samples.txt')
-    parser.add_argument('--max_new_tokens', type=int, default=30)
+    parser.add_argument('--max_new_tokens', type=int, default=5)
     parser.add_argument('--checkpoint', type=str, default="facebook/opt-iml-max-1.3b")
     args = parser.parse_args()
 
@@ -49,18 +49,18 @@ def main():
         model = AutoModelForSeq2SeqLM.from_pretrained(checkpoint, torch_dtype="auto", device_map="auto")
     else:
         model = AutoModel.from_pretrained(checkpoint, torch_dtype="auto", device_map="auto")
-        
+
     results = []
     for i, sample in tqdm(enumerate(data[:])):
         inputs = tokenizer.encode(sample, return_tensors="pt").to("cuda")
         outputs = model.generate(inputs, max_new_tokens=args.max_new_tokens)
         results.append({"input":sample, "output":tokenizer.decode(outputs[0])})
 
-
+    logging.warning("Generation completed.")
     with open("results/country_prediction/{}_{}.json".format(args.checkpoint.split("/")[1], args.file[:-4]), 'w') as f:
         results = [json.dumps(r)+'\n' for r in results]
         f.writelines(results)
-
+    logging.warning("Output saved.")
 
 if __name__ == "__main__":
     main()
