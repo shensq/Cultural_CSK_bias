@@ -15,7 +15,8 @@ from api_key import api_key
 def get_response(text, max_tokens=256):
     response = openai.Completion.create(
         # model="text-curie-001",
-        model="text-davinci-003",
+        # model="text-davinci-003",
+        model="gpt-3.5-turbo",
         prompt=text,
         temperature=0,
         max_tokens=max_tokens,
@@ -47,8 +48,8 @@ def main():
     results = [None] * len(data)
     for i, sample in tqdm(enumerate(data)):
         results[i] = get_response(sample, max_tokens=args.max_tokens)
-        with open("gpt3/country_prediction/{}.pkl".format(args.file[:-4]), 'wb') as f:
-            pickle.dump(results, f)
+    with open("gpt3/country_prediction/{}.pkl".format(args.file[:-4]), 'wb') as f:
+        pickle.dump(results, f)
 
 
 if __name__ == "__main__":
