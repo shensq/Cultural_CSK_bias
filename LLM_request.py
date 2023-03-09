@@ -12,6 +12,7 @@ from transformers import AutoModelForCausalLM, AutoModelForSeq2SeqLM, AutoTokeni
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--file', type=str, default='atomic_samples.txt')
+    parser.add_argument('--task', type=str, default='country_prediction')
     parser.add_argument('--max_new_tokens', type=int, default=5)
     parser.add_argument('--checkpoint', type=str, default="facebook/opt-iml-max-1.3b")
     args = parser.parse_args()
@@ -33,7 +34,8 @@ def main():
     transformers.utils.logging.enable_explicit_format()
 
     logging.warning("Loading Dataset.")
-    folder = "data/country_prediction/"
+    folder = "data/{}/".format(args.task)
+
     with open(folder + args.file, 'r') as f:
         data = f.readlines()
     data = [d.replace('\n', '') for d in data]
@@ -50,7 +52,7 @@ def main():
         model = AutoModel.from_pretrained(checkpoint, torch_dtype="auto", device_map="auto")
 
     results = []
-    json_write = open("results/country_prediction/{}_{}.json".format(args.checkpoint.split("/")[1], args.file[:-4]),
+    json_write = open("results/{}/{}_{}.json".format(args.task, args.checkpoint.split("/")[1], args.file[:-4]),
                       'w')
 
     for i, sample in tqdm(enumerate(data[:])):
