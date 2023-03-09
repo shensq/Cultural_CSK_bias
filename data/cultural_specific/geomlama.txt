@@ -1,0 +1,125 @@
+Which side do people usually keep when driving in the United States? Choose from the following options: right, left, middle, anywhere
+Which side do people usually keep when driving in the China? Choose from the following options: right, left, middle, anywhere
+Which side do people usually keep when driving in the India? Choose from the following options: right, left, middle, anywhere
+Which side do people usually keep when driving in the Iran? Choose from the following options: right, left, middle, anywhere
+Which side do people usually keep when driving in the Kenya? Choose from the following options: right, left, middle, anywhere
+Which side of the car is the driver seat in the Untied States? Choose from the following options: right, left, front, back
+Which side of the car is the driver seat in China? Choose from the following options: right, left, front, back
+Which side of the car is the driver seat in India? Choose from the following options: right, left, front, back
+Which side of the car is the driver seat in Iran? Choose from the following options: right, left, front, back
+Which side of the car is the driver seat in Kenya? Choose from the following options: right, left, front, back
+What is the unit of measuring height in the United States? Choose from the following options: feet, inch, yard, mile, millimeter, centimeter, meter, kilometer
+What is the unit of measuring height in China? Choose from the following options: feet, inch, yard, mile, millimeter, centimeter, meter, kilometer
+What is the unit of measuring height in India? Choose from the following options: feet, inch, yard, mile, millimeter, centimeter, meter, kilometer
+What is the unit of measuring height in Iran? Choose from the following options: feet, inch, yard, mile, millimeter, centimeter, meter, kilometer
+What is the unit of measuring height in Kenya? Choose from the following options: feet, inch, yard, mile, millimeter, centimeter, meter, kilometer
+What is the unit of measuring weight in the United States? Choose from the following options: ounce, pound, miligram, gram, kilogram
+What is the unit of measuring weight in China? Choose from the following options: ounce, pound, miligram, gram, kilogram
+What is the unit of measuring weight in India? Choose from the following options: ounce, pound, miligram, gram, kilogram
+What is the unit of measuring weight in Iran? Choose from the following options: ounce, pound, miligram, gram, kilogram
+What is the unit of measuring weight in Kenya? Choose from the following options: ounce, pound, miligram, gram, kilogram
+What is the unit of measuring temperature in the United States? Choose from the following options: Fahrenheit, Celsius, Rankine
+What is the unit of measuring temperature in China? Choose from the following options: Fahrenheit, Celsius, Rankine
+What is the unit of measuring temperature in India? Choose from the following options: Fahrenheit, Celsius, Rankine
+What is the unit of measuring temperature in Iran? Choose from the following options: Fahrenheit, Celsius, Rankine
+What is the unit of measuring temperature in Kenya? Choose from the following options: Fahrenheit, Celsius, Rankine
+In United States, does the month appear before/after the year in the date format? Choose from the following options: before, after, below, above
+In China, does the month appear before/after the year in the date format? Choose from the following options: before, after, below, above
+In India, does the month appear before/after the year in the date format? Choose from the following options: before, after, below, above
+In Iran, does the month appear before/after the year in the date format? Choose from the following options: before, after, below, above
+In Kenya, does the month appear before/after the year in the date format? Choose from the following options: before, after, below, above
+In United States, does the year appear before/after the month in the date format? Choose from the following options: before, after, below, above
+In China, does the year appear before/after the month in the date format? Choose from the following options: before, after, below, above
+In India, does the year appear before/after the month in the date format? Choose from the following options: before, after, below, above
+In Iran, does the year appear before/after the month in the date format? Choose from the following options: before, after, below, above
+In Kenya, does the year appear before/after the month in the date format? Choose from the following options: before, after, below, above
+In United States, is it rare or common that customers pay tips after a meal? Choose from the following options: rare, common
+In China, is it rare or common that customers pay tips after a meal? Choose from the following options: rare, common
+In India, is it rare or common that customers pay tips after a meal? Choose from the following options: rare, common
+In Iran, is it rare or common that customers pay tips after a meal? Choose from the following options: rare, common
+In Kenya, is it rare or common that customers pay tips after a meal? Choose from the following options: rare, common
+What time of the day American people usually take the shower? Choose from the following options: morning, noon, afternoon, evening
+What time of the day Chinese people usually take the shower? Choose from the following options: morning, noon, afternoon, evening
+What time of the day Indian people usually take the shower? Choose from the following options: morning, noon, afternoon, evening
+What time of the day Iranian people usually take the shower? Choose from the following options: morning, noon, afternoon, evening
+What time of the day Kenyan people usually take the shower? Choose from the following options: morning, noon, afternoon, evening
+How do American people dry their wet clothes? Choose from the following options: machines, sun
+How do Chinese people dry their wet clothes? Choose from the following options: machines, sun
+How do Indian people dry their wet clothes? Choose from the following options: machines, sun
+How do Iranian people dry their wet clothes? Choose from the following options: machines, sun
+How do Kenyan people dry their wet clothes? Choose from the following options: machines, sun
+Is it rare or common for people to use broom to clean the floor in the United States? Choose from the following options: rare, common
+Is it rare or common for people to use broom to clean the floor in China? Choose from the following options: rare, common
+Is it rare or common for people to use broom to clean the floor in India? Choose from the following options: rare, common
+Is it rare or common for people to use broom to clean the floor in Iran? Choose from the following options: rare, common
+Is it rare or common for people to use broom to clean the floor in Kenya? Choose from the following options: rare, common
+What is the staple food in United States? Choose from the following options: bread, rice, noodles, potato, meat, vegetable, fruit, maize
+What is the staple food in China? Choose from the following options: bread, rice, noodles, potato, meat, vegetable, fruit, maize
+What is the staple food in India? Choose from the following options: bread, rice, noodles, potato, meat, vegetable, fruit, maize
+What is the staple food in Iran? Choose from the following options: bread, rice, noodles, potato, meat, vegetable, fruit, maize
+What is the staple food in Kenya? Choose from the following options: bread, rice, noodles, potato, meat, vegetable, fruit, maize
+Which tools do American people usually eat food with? Choose from the following options: knife, fork, spoon, hand, chopsticks
+Which tools do Chinese people usually eat food with? Choose from the following options: knife, fork, spoon, hand, chopsticks
+Which tools do Indian people usually eat food with? Choose from the following options: knife, fork, spoon, hand, chopsticks
+Which tools do Iranian people usually eat food with? Choose from the following options: knife, fork, spoon, hand, chopsticks
+Which tools do Kenyan people usually eat food with? Choose from the following options: knife, fork, spoon, hand, chopsticks
+In United States, is it rare or common for people to share their food when they eat out? Choose from the following options: rare, common
+In China, is it rare or common for people to share their food when they eat out? Choose from the following options: rare, common
+In India, is it rare or common for people to share their food when they eat out? Choose from the following options: rare, common
+In Iran, is it rare or common for people to share their food when they eat out? Choose from the following options: rare, common
+In Kenya, is it rare or common for people to share their food when they eat out? Choose from the following options: rare, common
+In United States, is it rare or common to see people drink hot water? Choose from the following options: rare, common
+In China, is it rare or common to see people drink hot water? Choose from the following options: rare, common
+In India, is it rare or common to see people drink hot water? Choose from the following options: rare, common
+In Iran, is it rare or common to see people drink hot water? Choose from the following options: rare, common
+In Kenya, is it rare or common to see people drink hot water? Choose from the following options: rare, common
+Is it rare or common for adults to live with their parents in the United States? Choose from the following options: rare, common
+Is it rare or common for adults to live with their parents in the China? Choose from the following options: rare, common
+Is it rare or common for adults to live with their parents in India? Choose from the following options: rare, common
+Is it rare or common for adults to live with their parents in Iran? Choose from the following options: rare, common
+Is it rare or common for adults to live with their parents in Kenya? Choose from the following options: rare, common
+What are the most popular sports in the United States? Choose from the following options: football, basketball, baseball, table tennis, badminton, soccer, volleyball, cricket, athletics
+What are the most popular sports in China? Choose from the following options: football, basketball, baseball, table tennis, badminton, soccer, volleyball, cricket, athletics
+What are the most popular sports in India? Choose from the following options: football, basketball, baseball, table tennis, badminton, soccer, volleyball, cricket, athletics
+What are the most popular sports in Iran? Choose from the following options: football, basketball, baseball, table tennis, badminton, soccer, volleyball, cricket, athletics
+What are the most popular sports in Kenya? Choose from the following options: football, basketball, baseball, table tennis, badminton, soccer, volleyball, cricket, athletics
+What was the most popular mode of transportation in the big cities of the United States 30 years back? Choose from the following options: car, bus, train, metro, bicycle, plane, ship, boat
+What was the most popular mode of transportation in the big cities of China 30 years back? Choose from the following options: car, bus, train, metro, bicycle, plane, ship, boat
+What was the most popular mode of transportation in the big cities of the India 30 years back? Choose from the following options: car, bus, train, metro, bicycle, plane, ship, boat
+What was the most popular mode of transportation in the big cities of Iran 30 years back? Choose from the following options: car, bus, train, metro, bicycle, plane, ship, boat
+What was the most popular mode of transportation in the big cities of Kenya 30 years back? Choose from the following options: car, bus, train, metro, bicycle, plane, ship, boat
+Is it rare or common for households to have servants in the United States? Choose from the following options: common, rare
+Is it rare or common for households to have servants in China? Choose from the following options: common, rare
+Is it rare or common for households to have servants in India? Choose from the following options: common, rare
+Is it rare or common for households to have servants in Iran? Choose from the following options: common, rare
+Is it rare or common for households to have servants in Kenya? Choose from the following options: common, rare
+Which climate zone does the United States belong to? Choose from the following options: tropical, temperate, dry, continental, polar
+Which climate zone does China belong to? Choose from the following options: tropical, temperate, dry, continental, polar
+Which climate zone does India belong to? Choose from the following options: tropical, temperate, dry, continental, polar
+Which climate zone does Iran belong to? Choose from the following options: tropical, temperate, dry, continental, polar
+Which climate zone does Kenya belong to? Choose from the following options: tropical, temperate, dry, continental, polar
+Which color represents the rise in the stock prices in America? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+Which color represents the rise in the stock prices in China? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+Which color represents the rise in the stock prices in India? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+Which color represents the rise in the stock prices in Iran? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+Which color represents the rise in the stock prices in Kenya? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+Which color represents the drop in the stock prices in America? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+Which color represents the drop in the stock prices in China? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+Which color represents the drop in the stock prices in India? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+Which color represents the drop in the stock prices in Iran? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+Which color represents the drop in the stock prices in Kenya? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+What is the color of the bridal outfit in an American wedding? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+What is the color of the bridal outfit in an Chinese wedding? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+What is the color of the bridal outfit in an Indian wedding? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+What is the color of the bridal outfit in a Persian wedding? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+What is the color of the bridal outfit in a Kenyan wedding? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+What is the color of the dress that Americans wear in a traditional funerals? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+What is the color of the dress that Chinese wear in traditional funerals? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+What is the color of the dress that Indians wear in traditional funerals? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+What is the color of the dress that Persians wear in traditional funerals? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+What is the color of the dress that Kenyans wear in traditional funerals? Choose from the following options: red, yellow, blue, orange, green, violet, black, white
+Does an American wedding ceremony last for more than one day? Choose from the following options: less, more
+Does a Chinese wedding ceremony last for more than one day? Choose from the following options: less, more
+Does an Indian wedding ceremony last for more than one day? Choose from the following options: less, more
+Does an Iranian wedding ceremony last for more than one day? Choose from the following options: less, more
+Does a Kenyan wedding ceremony last for more than one day? Choose from the following options: less, more
